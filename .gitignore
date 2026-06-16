@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+*.pyo
+notes.md
+.pytest_cache/

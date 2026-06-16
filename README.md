@@ -2,7 +2,7 @@
 
 A minimal command-line tool for saving and searching your own notes - without leaving the terminal.
 
-## Why
+## Purpose
 
 This project is primarily a learning exercise - to understand how CLI tools work, how SQLite stores data, and how fuzzy search is implemented under the hood.
 
@@ -29,6 +29,10 @@ rmb add "<note>"           save a note
 rmb search "<query>"       search your notes (exact + fuzzy)
 rmb list [--limit N]       show N most recent notes (default 20)
 rmb tag <tag>              filter notes by tag
+rmb delete <id>            delete a note by ID (asks for confirmation)
+rmb export                 print all notes as markdown (pipe to file: rmb export > notes.md)
+rmb tui                    live search interface
+rmb help                   show available commands
 ```
 
 ## Stack
@@ -38,4 +42,4 @@ rmb tag <tag>              filter notes by tag
 
 ## Status
 
-Work in progress.
+v1.0 - feature complete.
